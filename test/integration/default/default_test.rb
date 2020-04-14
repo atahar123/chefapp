@@ -107,3 +107,7 @@ end
 describe package('python3-pip') do
   it { should be_installed }
 end
+
+describe directory('/var/lib/jenkins') do
+  it { should exist }
+end
